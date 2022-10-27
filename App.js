@@ -12,13 +12,15 @@ import {
 } from 'react-native';
 const {width,height}=Dimensions.get('window')
 
-import Practice from './src/prac';
-import Reset from './src/ResetPassword';
-import NewPassword from './src/NewPassword';
-import ForgetPassword from './src/ForgetPassword';
-import Verification from './src/Verification';
-import SignUp from './src/SignUp';
-import Flags from './src/Flags';
+// import Practice from './src/prac';
+// import Reset from './src/ResetPassword';
+// import NewPassword from './src/NewPassword';
+// import ForgetPassword from './src/ForgetPassword';
+// import Verification from './src/Verification';
+// import SignUp from './src/SignUp';
+// import Flags from './src/Flags';
+import Profile from './src/Profile';
+import TabViewExample from './src/Profile'
 
 const App = () => {
   return (
@@ -27,7 +29,9 @@ const App = () => {
           {/* <ForgetPassword/> */}
           {/* <Verification/> */}
           {/* <NewPassword/> */}
-          <Reset/>
+          {/* <Reset/> */}
+          {/* <TabViewExample/> */}
+          <Profile/>
         </View>
     </SafeAreaView>
   );
