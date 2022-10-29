@@ -20,7 +20,9 @@ const {width,height}=Dimensions.get('window')
 // import SignUp from './src/SignUp';
 // import Flags from './src/Flags';
 import Profile from './src/Profile';
-import TabViewExample from './src/Profile'
+import TabViewExample from './src/Profile';
+import Settings from './src/Settings';
+import Premium from './src/Premium';
 
 const App = () => {
   return (
@@ -31,7 +33,9 @@ const App = () => {
           {/* <NewPassword/> */}
           {/* <Reset/> */}
           {/* <TabViewExample/> */}
-          <Profile/>
+          {/* <Profile/> */}
+          <Settings/>
+          {/* <Premium/> */}
         </View>
     </SafeAreaView>
   );
