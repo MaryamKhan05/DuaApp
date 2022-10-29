@@ -17,7 +17,7 @@ const styles = StyleSheet.create ({
     image:{
         //borderWidth:1,
         width:wp('35%'),
-        height:hp('35%'),
+        height:hp('30%'),
         marginTop:30,
         alignSelf:'center',
     },
@@ -25,8 +25,8 @@ const styles = StyleSheet.create ({
         //marginLeft:30,
         padding:40,
         //backgroundColor:'yellow',
-        width:wp('90%'),
-        height:hp('90%'),
+        width:width,
+        height:height,
         alignSelf:'center',    
     },
     purple:{

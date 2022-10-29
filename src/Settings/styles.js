@@ -7,6 +7,7 @@ const styles = StyleSheet.create ({
       flex:1,
       height:height,
       width:width,
+      //backgroundColor:'yellow',
     },
     text:{
       fontSize:15,
@@ -51,5 +52,26 @@ const styles = StyleSheet.create ({
         //paddingLeft:wp('4%'),
         float:'right'
       },
+      card:{
+        flexDirection:'column',
+        //backgroundColor:'red',
+        width:wp('80%'), 
+        alignSelf:'center',
+        padding:hp('5%'),
+    },
+    textF:{
+       //backgroundColor:'yellow',
+        fontSize:14,
+        fontWeight:400,
+        //paddingTop:34,
+        paddingLeft:20,
+        //width:200,
+        padding:hp('2%')
+    },
+    flag:{
+        //padding:30,
+        //paddingRight:50,
+        left:34,
+    },
 });
 export default styles;

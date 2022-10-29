@@ -6,11 +6,42 @@ import Modal from 'react-native-modal';
 const {width,height}=Dimensions.get('window');
 import styles from './styles.js';
 import Pop from './popup.js';
-
+const languages = [
+  {
+      "name": "Arabic ",
+      "image":require("../../assets/arabic.png"), 
+  },
+  {
+      "name": "English(US)",
+      "image":require("../../assets/US.png"), 
+  }, 
+]; 
 const Settings=()=>{
+  const [checked, setChecked] = React.useState('');
       return (
+        
         <View style={styles.container}>
           <ScrollView>
+          <FlatList
+          horizontal
+          //numColumns={'2'}
+          data={languages}
+          renderItem={({item})=>{
+            //console.log(item.name);
+            //console.log(item.position);
+            return (
+                <View style={{  justifyContent:'center', alignContent:'center',}}>
+                    <View style={styles.card}>
+                        <View style={styles.flag}>
+                        <Image source={item.image}  style={{width:30, height:30,borderRadius:30,}}/>
+                        </View>
+                    <Text style={styles.textF}>{item.name}</Text>
+                    </View> 
+                </View>
+            ); 
+        }}
+        />
+            
             {/* <Pop/> */}
             {/* <Text>hello</Text> */}
             <View style={{ width:wp('90%'), justifyContent:'center', alignSelf:'center', padding:10}}>

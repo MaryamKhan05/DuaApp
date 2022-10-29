@@ -4,9 +4,9 @@ import { FlatList, Text, View, StyleSheet, TouchableOpacity, Dimensions } from '
 const {width,height}=Dimensions.get('window');
 const styles = StyleSheet.create ({
     container:{
-        //backgroundColor:'yellow',
+        //backgroundColor:'red',
         //flex:1,
-        width:wp('90%'),
+        width:width,
         height:height,
         justifyContent:'center',
         alignContent:'center',
@@ -16,17 +16,21 @@ const styles = StyleSheet.create ({
     },
     image:{
         //borderWidth:1,
-        width:wp('35%'),
+        width:wp('45%'),
         height:hp('35%'),
-        marginTop:30,
+       //marginTop:30,
         alignSelf:'center',
+        //width:286,
+        //height:286,
     },
     view:{
         //marginLeft:30,
-        padding:40,
+        padding:hp('5%'),
         //backgroundColor:'yellow',
-        width:wp('90%'),
-        height:hp('90%'),
+        //width:wp('90%'),
+        paddingTop:hp('7%'),
+        width:width,
+        height:height,
         alignSelf:'center',    
     },
     purple:{
