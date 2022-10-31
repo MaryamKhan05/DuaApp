@@ -49,8 +49,8 @@ const styles = StyleSheet.create ({
         color:'#979797'
     },
     image:{
-        width:12,
-        height:15,
+        width:13,
+        height:10,
         //paddingRight:10,
     },
     input: {
@@ -78,7 +78,7 @@ const styles = StyleSheet.create ({
         fontWeight:500,
         alignSelf:'center',
         top:30,
-        paddingTop:5,
+        //paddingTop:5,
     },
     login:{
         color:'#828282',
@@ -89,7 +89,7 @@ const styles = StyleSheet.create ({
         //paddingLeft:92,
         alignSelf:'center',
         top:hp('30'),
-        paddingTop:5,
+        //paddingTop:5,
     },
     option:{
         color:'#828282',
@@ -99,8 +99,8 @@ const styles = StyleSheet.create ({
         //left:190,
         //paddingLeft:92,
         alignSelf:'center',
-        top:150,
-        paddingTop:30,
+        //top:150,
+        paddingBottom:wp('2%'),
     },
     google:{
         borderRadius:12,
@@ -128,9 +128,9 @@ const styles = StyleSheet.create ({
        height:hp('5%'),
     },
     logo:{
-        width:10,
+        width:5,
         height:10,
-        paddingRight:10,
+        //paddingRight:10,
         padding:10,
     },
     button:{
@@ -146,6 +146,13 @@ const styles = StyleSheet.create ({
         color:'white',
         padding:3,
         alignSelf:'center'
+    },
+    forgot:{
+        //position:'absolute',
+        fontSize:14,
+        fontWeight:400,
+        alignSelf:'flex-end',
+        padding:wp('2%')
     },
 });
 export default styles;

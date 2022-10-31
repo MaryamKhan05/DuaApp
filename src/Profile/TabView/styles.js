@@ -7,8 +7,10 @@ import { TabView, SceneMap,TabBar } from 'react-native-tab-view';
 const styles = StyleSheet.create({
     container: {
       //marginTop: StatusBar.currentHeight,
-      backgroundColor:'#O3OAO4',
+      //backgroundColor:'#O3OAO4',
       color:'#A044FF',
+      //backgroundColor:'black',
+      //position:'fixed'
     },
     scene: {
       flex: 1,
@@ -57,5 +59,63 @@ const styles = StyleSheet.create({
       fontSize:14,
       color:'#0F0702'
     },
-      })
+    view:{
+      //marginLeft:30,
+      padding:40,
+      //backgroundColor:'yellow',
+      //width:wp('80%'),
+      //height:hp('40%'),
+      top:hp('5%'),
+      alignSelf:'center',    
+  },
+  text3:{
+      fontSize:14,
+      fontWeight:400,
+      color:'#979797',
+      paddingTop:wp('2%')
+  },
+  image:{
+      width:16,
+      height:12,
+      top:5,
+      paddingRight:wp('2%'),
+  },
+  input: {
+      height: 40,
+      //margin: 12,
+      borderBottomWidth: 0.25,
+      width:wp('90%'),
+      borderColor:'#939393',
+      padding: 10,
+  },
+  login:{
+      color:'#828282',
+      //color:'yellow',
+      fontSize:14,
+      fontWeight:400,
+      //left:190,
+      //paddingLeft:92,
+      alignSelf:'center',
+      top:30,
+      paddingTop:5,
+  },
+  eye:{
+    width:wp('2%'),
+    height:hp('2%')
+  },
+  button:{
+    backgroundColor:'#A044FF',
+    borderRadius:10,
+    padding:10,
+    justifyContent:'center',
+    alignContent:'center',
+    width:wp('60%'),
+    height:hp('7%'),
+},
+buttontxt:{
+    color:'white',
+    padding:3,
+    alignSelf:'center'
+},
+  })
 export default styles;

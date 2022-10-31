@@ -54,21 +54,26 @@ const Login =()=>{
                     style={styles.input}
                     />
                     </View>
+                    <View style={styles.forgot}>
+                        <Text style={styles.login}>forgot Password?</Text>
+                    </View>
                     
-                    <View style={{width:wp('70%'), justifyContent:'center', alignSelf:'center',paddingTop:30,paddingBottom:20}}>
+                    <View style={{justifyContent:'center', alignSelf:'center',paddingTop:hp('1%'),}}>
                     <View style={{alignSelf:'center'}}>
                         <TouchableOpacity
                         style={styles.button}>
                             <Text style={styles.buttontxt}>Login</Text>
                         </TouchableOpacity>
-                        </View>
-                    <View style={{flexDirection:'row', top:20,justifyContent:'center', alignContent:'center',}}>
+                    </View>
+                    <View style={{flexDirection:'row',padding:hp('2%'), justifyContent:'center', alignContent:'center',}}>
                     <Text style={styles.login}>Don't have an account? </Text>
                     <TouchableOpacity>
                     <Text style={styles.resend}>Sign Up</Text>
                     </TouchableOpacity>
                     </View>
+                    <View>
                     <Text style={styles.option}>or log in with </Text>
+                    </View>
                     </View>
                     <View style={{flexDirection:'row', justifyContent:'center', alignContent:'center',}}>
                         <View style={{paddingRight:3}}>
@@ -89,7 +94,7 @@ const Login =()=>{
                             <View style={{flexDirection:'row',}}>
                             <Image
                             style={styles.logo}
-                            source={require('../../assets/google.png')}
+                            source={require('../../assets/facebook.png')}
                             />
                             <Text style={styles.btnText}>Facebook</Text>
                             </View>

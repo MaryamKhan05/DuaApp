@@ -10,9 +10,10 @@ const styles = StyleSheet.create({
       backgroundColor:'#A044FF',
       justifyContent:'center',
       alignContent:'center',
-      paddingTop:10,
+      padding:10,
       height:hp('10%'),
       width:width,
+      //backgroundColor:'black',
     },
     form:{
         backgroundColor:'#fff',
@@ -20,15 +21,15 @@ const styles = StyleSheet.create({
         //borderRightWidth:10,
         //borderLeftWidth:10,
         width:width,
-        height:hp('85%'),
-        top:hp('10%'),
+        height:hp('95%'),
+        top:hp('3%'),
         borderTopRightRadius:25,
         borderTopLeftRadius:25,
     },
     text:{
         width:126,
         height:45,
-        fontWeight:500,
+        fontWeight:400,
         fontSize:30,
         color:'#FFFFFF',
         paddingTop:10,
@@ -40,6 +41,12 @@ const styles = StyleSheet.create({
         fontWeight:400,
         color:'#FFFFFF',
         paddingTop:5,
+    },
+    image:{
+        width:16,
+        height:12,
+        top:5,
+        paddingRight:10,
     },
     })
 export default styles;

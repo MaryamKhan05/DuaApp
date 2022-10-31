@@ -10,10 +10,10 @@ const Profile=()=> {
   return (
     <View style={styles.container}>
         <View style={{paddingTop:20}}>
-        <View style={{paddingTop:30, paddingLeft:10, width:wp('90%'), alignSelf:'center',}}>
+        <View style={{ paddingLeft:10, width:wp('90%'), alignSelf:'center',}}>
             <View style={{flexDirection:'row',justifyContent:'space-between',paddingRight:10,}}>
             <Image
-            style={{height:58, width:42,}}
+            style={{height:50, width:35,}}
             source={require('../../assets/boy.png')}
             />
             <Image
