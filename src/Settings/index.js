@@ -5,39 +5,67 @@ import { FlatList, Text, View, StyleSheet, TouchableOpacity, Dimensions, Button,
 import Modal from 'react-native-modal';
 const {width,height}=Dimensions.get('window');
 import styles from './styles.js';
+import Brightness from './slider';
 import Pop from './popup.js';
 const languages = [
   {
-      "name": "Arabic ",
-      "image":require("../../assets/arabic.png"), 
+      "name": "Khalifah Taniji",
+      "image":require("../../assets/taniji.png"), 
   },
   {
-      "name": "English(US)",
-      "image":require("../../assets/US.png"), 
+      "name": "Abdur-Rahman",
+      "image":require("../../assets/abdurrehman.png"), 
   }, 
+  {
+    "name": "Mishari Rashid",
+    "image":require("../../assets/mishari.png"), 
+  },
+  {
+    "name": "Mishari Rashid",
+    "image":require("../../assets/mishari.png"), 
+  },{
+    "name": "Mishari Rashid",
+    "image":require("../../assets/mishari.png"), 
+  },
+  {
+    "name": "Mishari Rashid",
+    "image":require("../../assets/mishari.png"), 
+  },
+  
+
 ]; 
 const Settings=()=>{
   const [checked, setChecked] = React.useState('');
       return (
         
         <View style={styles.container}>
-          <ScrollView>
+          <ScrollView
+          showsVerticalScrollIndicator={false}
+          >
+          <View style={{ width:wp('90%'), justifyContent:'center', alignSelf:'center', padding:10}}>
+            <View style={{padding:wp('5%'),}}>
+              <Text style={styles.title}>Reciters</Text>
+            </View>
+            </View>
           <FlatList
           horizontal
+          showsHorizontalScrollIndicator={false}
+          showsVerticalScrollIndicator={false}
           //numColumns={'2'}
           data={languages}
           renderItem={({item})=>{
-            //console.log(item.name);
-            //console.log(item.position);
             return (
-                <View style={{  justifyContent:'center', alignContent:'center',}}>
+              
+              <View style={{justifyContent:'center',alignItems:'center', padding:wp('2%'),left:wp('10%'), }}>
                     <View style={styles.card}>
                         <View style={styles.flag}>
-                        <Image source={item.image}  style={{width:30, height:30,borderRadius:30,}}/>
+                        <Image source={item.image}  style={{width:60, height:60,borderRadius:30,}}/>
                         </View>
-                    <Text style={styles.textF}>{item.name}</Text>
-                    </View> 
-                </View>
+                        <View style={{justifyContent:'center', alignContent:'center'}}>
+                          <Text style={styles.textF}>{item.name}</Text>
+                        </View>
+                    </View>
+              </View>
             ); 
         }}
         />
@@ -109,6 +137,7 @@ const Settings=()=>{
               </View>
             </View>
             </TouchableOpacity>
+            <TouchableOpacity>
             <View style={{flexDirection:'row', paddingLeft:wp('5'),padding:hp('2%')}}>
             <View style={{paddingRight:wp('8%'),paddingLeft:wp('2%'),}}>
             <Image
@@ -118,6 +147,7 @@ const Settings=()=>{
             </View>
               <Text style={styles.text}>Font Type </Text>
             </View>
+            </TouchableOpacity>
             <TouchableOpacity>
             <View style={{flexDirection:'row', paddingLeft:wp('5'),padding:hp('2%')}}>
             <View style={{paddingRight:wp('8%'),paddingLeft:wp('2%'),}}>
@@ -138,6 +168,9 @@ const Settings=()=>{
                 />
             </View>
               <Text style={styles.text}>Brightness</Text>
+              <View style={styles.arrow}>
+                <Brightness/>
+              </View>
             </View>
             </TouchableOpacity>
             <View style={{padding:wp('5')}}>

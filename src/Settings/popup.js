@@ -10,7 +10,8 @@ import {
   Text,
   TouchableOpacity,
   Animated,
-  Dimensions
+  Dimensions,
+  ImageBackground,
 } from 'react-native';
 const {width,height}=Dimensions.get('window');
 const ModalPoup = ({visible, children}) => {
@@ -52,7 +53,11 @@ const Pop = () => {
   const [visible, setVisible] = React.useState(false);
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center',}}>
-      <ModalPoup visible={visible}>
+      <ModalPoup visible={visible} style={{backgroundColor:'red'}}>
+        <ImageBackground
+        style={{width:wp('80%'), height:hp('20%')}}
+        source={require('../../assets/24 (11).png')}
+        >
         <View style={{alignItems: 'center'}}>
           <View style={styles.header}>
             <TouchableOpacity onPress={() => setVisible(false)}>
@@ -63,16 +68,11 @@ const Pop = () => {
             </TouchableOpacity>
           </View>
         </View>
-        <View style={{alignItems: 'center'}}>
-          <Image
-            source={require('../../assets/bg.png')}
-            style={{height: 150, width: wp('80%'), marginVertical: 10}}
-          />
-        </View>
+        </ImageBackground>
+        
 
-        <Text style={{marginVertical: 30, fontSize: 20, textAlign: 'center'}}>
-        Enjoying our App?
-        </Text>
+        <Text style={{ fontSize: 20, textAlign: 'center'}}>Enjoying our App?</Text>
+        <Text style={{ fontSize: 20, textAlign: 'center'}}>Rate Your Experience With Us</Text>
       </ModalPoup>
       <Button title="Open Modal" onPress={() => setVisible(true)} />
     </View>
