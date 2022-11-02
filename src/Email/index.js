@@ -17,30 +17,28 @@ const Email =()=>{
                     source={require('../../assets/email (2).png')}
                     />
                 </View>
-            <View style={{padding:10,paddingTop:15}}>
+            <View style={{padding:wp('2%'),}}>
                 <Text style={styles.purple}>Verify your email address to complete your registration</Text>
             </View>
-            <View style={{padding:5}}>
+            <View style={{padding:wp('2%')}}>
                 <Text style={styles.text}>Hi Muhammad Ali</Text>
             </View>
-            <View style={{padding:5}}>
+            <View style={{padding:wp('2%')}}>
                 <Text style={styles.bold}>Welcome to Dua App</Text>
             </View>
-            <View style={{padding:5}}>
+            <View style={{padding:wp('2%')}}>
                 <Text style={styles.text}>Please verify your email address to complete your registration to continue</Text>
             </View>
-            <View style={{width:wp('50%'), justifyContent:'center', alignSelf:'center',paddingTop:10,paddingBottom:15}}>
-                <Button
-                //onPress={onPressLearnMore}
-                title="Reset Password"
-                color="#A044FF"
-                style={{padding:60, fontSize:16}}
-                />
+            <View style={{justifyContent:'center', alignSelf:'center', padding:hp('2%')}}>
+            <TouchableOpacity
+             style={styles.button}>
+                 <Text style={styles.buttontxt}>Verify Email </Text>
+            </TouchableOpacity>
             </View>
-            <View style={{paddingTop:5,paddingLeft:10,}}>
+            <View style={{paddingLeft:wp('2%')}}>
                 <Text style={styles.text}>Thanks for your time</Text>
             </View>
-            <View style={{paddingLeft:10,}}>
+            <View style={{paddingLeft:wp('2%')}}>
                 <Text style={styles.bold}>Dua App Team</Text>
             </View>
             <View>

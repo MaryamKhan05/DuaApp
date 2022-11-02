@@ -17,31 +17,28 @@ const Payment =()=>{
                     source={require('../../assets/payment.png')}
                     />
                 </View>
-            <View style={{padding:10,paddingTop:35}}>
+            <View style={{padding:wp('2%')}}>
                 <Text style={styles.purple}>Payment Successfull</Text>
             </View>
-            <View style={{padding:10}}>
+            <View style={{padding:wp('2%')}}>
                 <Text style={styles.text}>Hi Muhammad Ali</Text>
             </View>
-            <View style={{padding:10}}>
+            <View style={{padding:wp('2%')}}>
                 <Text style={styles.bold}>Welcome to Dua App</Text>
             </View>
-            <View style={{padding:10}}>
-                <Text style={styles.text}>Congratulations on becoming our members,
-now you can get all updates from us.</Text>
+            <View style={{padding:wp('2%')}}>
+                <Text style={styles.text}>Congratulations on becoming our members, now you can get all updates from us.</Text>
             </View>
-            <View style={{width:wp('50%'), justifyContent:'center', alignSelf:'center',paddingTop:30,paddingBottom:20}}>
-                <Button
-                //onPress={onPressLearnMore}
-                title="Reset Password"
-                color="#A044FF"
-                style={{padding:60, fontSize:16}}
-                />
+            <View style={{ justifyContent:'center', alignSelf:'center',padding:hp('2%')}}>
+            <TouchableOpacity
+             style={styles.button}>
+                 <Text style={styles.buttontxt}>Done</Text>
+            </TouchableOpacity>
             </View>
-            <View style={{paddingTop:5,paddingLeft:10,}}>
+            <View style={{paddingLeft:wp('2%')}}>
                 <Text style={styles.text}>Thanks for your time</Text>
             </View>
-            <View style={{paddingLeft:10,}}>
+            <View style={{paddingLeft:wp('2%')}}>
                 <Text style={styles.bold}>Dua App Team</Text>
             </View>
             <View>

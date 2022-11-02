@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import { FlatList, Text, View, StyleSheet, TouchableOpacity, Dimensions, Button, Image, TextInput} from 'react-native';
 const {width,height}=Dimensions.get('window');
 const styles = StyleSheet.create ({
@@ -36,9 +37,9 @@ const styles = StyleSheet.create ({
         borderRadius:4,
         borderColor:'#C4C4C4',
         borderWidth: 0.25,
-        padding: 5,
-        // fontWeight:400,
-        // fontSize:14,
+        padding: wp('4%'),
+        fontWeight:400,
+        fontSize:25,
         // color:'red'
     },
     login:{
@@ -71,5 +72,19 @@ const styles = StyleSheet.create ({
         fontWeight:400,
         color:'red'
     }, 
+    button:{
+        backgroundColor:'#A044FF',
+        borderRadius:10,
+        padding:10,
+        justifyContent:'center',
+        alignContent:'center',
+        width:wp('70%'),
+        height:hp('7%'),
+    },
+    buttontxt:{
+        color:'white',
+        padding:3,
+        alignSelf:'center'
+    },
 });
 export default styles;

@@ -17,7 +17,7 @@ const Reset =()=>{
                     source={require('../../assets/reset.png')}
                     />
                 </View>
-            <View style={{padding:10,paddingTop:35}}>
+            <View style={{padding:10,}}>
                 <Text style={styles.purple}>Reset your password</Text>
             </View>
             <View style={{padding:10}}>
@@ -29,15 +29,13 @@ const Reset =()=>{
             <View style={{padding:10}}>
                 <Text style={styles.text}>You have requested a password reset on Tue, 19 Apr 2022 16:11:39 GMT. If you want to reset your password, please click the below button.</Text>
             </View>
-            <View style={{width:wp('50%'), justifyContent:'center', alignSelf:'center',paddingTop:30,paddingBottom:20}}>
-                <Button
-                //onPress={onPressLearnMore}
-                title="Reset Password"
-                color="#A044FF"
-                style={{padding:60, fontSize:16}}
-                />
+            <View style={{justifyContent:'center', alignSelf:'center', padding:hp('1%')}}>
+                        <TouchableOpacity
+                        style={styles.button}>
+                            <Text style={styles.buttontxt}>Reset Password</Text>
+                        </TouchableOpacity>
             </View>
-            <View style={{paddingTop:5,paddingLeft:10,}}>
+            <View style={{paddingLeft:10,}}>
                 <Text style={styles.text}>Thanks for your time</Text>
             </View>
             <View style={{paddingLeft:10,}}>

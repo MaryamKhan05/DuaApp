@@ -29,12 +29,12 @@ const ForgetPassword =()=>{
                 />
             </View>
             <View style={{width:'70%', justifyContent:'center', alignSelf:'center',paddingTop:30,}}>
-                <Button
-                //onPress={onPressLearnMore}
-                title="Send"
-                color="#A044FF"
-                style={{fontSize:16, borderRadius:10}}
-                />
+            <View style={{alignSelf:'center',}}>
+                        <TouchableOpacity
+                        style={styles.button}>
+                            <Text style={styles.buttontxt}>Sign Up</Text>
+                        </TouchableOpacity>
+            </View>
             </View>
             <View style={{alignSelf:'center',}}>
                 <TouchableOpacity>

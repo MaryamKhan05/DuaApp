@@ -11,9 +11,9 @@ const styles = StyleSheet.create ({
     },
     view:{
         //marginLeft:30,
-        padding:40,
-        //backgroundColor:'yellow',
-        width:wp('80%'),
+        padding:hp('2%'),
+        // backgroundColor:'yellow',
+        width:wp('90%'),
         //height:hp('40%'),
         top:hp('5%'),
         alignSelf:'center',    
@@ -47,6 +47,20 @@ const styles = StyleSheet.create ({
         alignSelf:'center',
         top:30,
         paddingTop:5,
+    },
+    button:{
+        backgroundColor:'#A044FF',
+        borderRadius:10,
+        padding:10,
+        justifyContent:'center',
+        alignContent:'center',
+        width:wp('50%'),
+        height:hp('7%'),
+    },
+    buttontxt:{
+        color:'white',
+        padding:3,
+        alignSelf:'center'
     },
 });
 export default styles;

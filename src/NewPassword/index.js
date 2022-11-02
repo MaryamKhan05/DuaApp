@@ -39,23 +39,18 @@ const NewPassword =()=>{
                 <Text style={styles.text}>Confirm Password</Text>
                 </View>
             </View>
-            <View style= {{flexDirection:'row'}}>
+            <View>
                 <TextInput
                 style={styles.input}
                 />
-                <Image
-                style={styles.eye}
-                source={require('../../assets/eye.png')}
-                />
+               
             </View>
             
-            <View style={{width:'70%', justifyContent:'center', alignSelf:'center',paddingTop:30,paddingBottom:20}}>
-                <Button
-                //onPress={onPressLearnMore}
-                title="Submit"
-                color="#A044FF"
-                style={{fontSize:16, borderRadius:10}}
-                />
+            <View style={{ justifyContent:'center', alignSelf:'center',padding:hp('3%')}}>
+                        <TouchableOpacity
+                        style={styles.button}>
+                            <Text style={styles.buttontxt}>Sign Up</Text>
+                        </TouchableOpacity>
             </View>
             </View>
         </View>

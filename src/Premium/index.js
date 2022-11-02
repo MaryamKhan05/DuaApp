@@ -14,18 +14,20 @@ const Premium =()=>{
             style={{width:width, height:height}}>
                 <View style={{backgroundColor: 'rgba(0,0,0,0.5)',height:height,width:width, }}>
                 <View style={{ padding:20, justifyContent:'center'}}>
+                <TouchableOpacity>
                 <Image
                 source={require('../../assets/cross.png')}
                 style={{height: 30, width: 30, alignSelf:'flex-end',}}
                 />
+                </TouchableOpacity>
                 </View>
-                <View style={{ padding:20, justifyContent:'center',paddingTop:hp('40%'), padding:hp('5')}}>
+                <View style={{ justifyContent:'center', padding:hp('3%'), paddingTop:hp('25%')}}>
                 <Image
                 source={require('../../assets/quran.png')}
                 style={{height: 83, width: 119, alignSelf:'center',}}
                 />
                 </View>
-                <View style={{padding:hp('3')}}>
+                <View style={{padding:hp('2%')}}>
                     <Text style={styles.heading}>Get Premium Access</Text>
                 </View>
                 <View style={{ justifyContent:'center', alignItems:'center', flexDirection:'row'}}>
@@ -36,6 +38,12 @@ const Premium =()=>{
                 />
                 </View>
                     <Text style= {styles.text}>Your purchase will help us fund projects of Quran and Hadith and books of children</Text>
+                </View>
+                <View style={{alignSelf:'center',paddingTop:hp('7%')}}>
+                        <TouchableOpacity
+                        style={styles.button}>
+                            <Text style={styles.buttontxt}>Update</Text>
+                        </TouchableOpacity>
                 </View>
                 </View>
 

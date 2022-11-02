@@ -131,5 +131,19 @@ const styles = StyleSheet.create ({
         paddingRight:10,
         padding:10,
     },
+    button:{
+        backgroundColor:'#A044FF',
+        borderRadius:10,
+        padding:10,
+        justifyContent:'center',
+        alignContent:'center',
+        width:wp('70%'),
+        height:hp('7%'),
+    },
+    buttontxt:{
+        color:'white',
+        padding:3,
+        alignSelf:'center'
+    },
 });
 export default styles;

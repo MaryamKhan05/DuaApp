@@ -39,13 +39,11 @@ const Verification =()=>{
                 />
             </View>
             </View>
-            <View style={{width:'70%', justifyContent:'center', alignSelf:'center',paddingTop:30,}}>
-                <Button
-                //onPress={onPressLearnMore}
-                title="Verify"
-                color="#A044FF"
-                style={{fontSize:16, borderRadius:10}}
-                />
+            <View style={{ justifyContent:'center', alignSelf:'center', padding:hp('2%')}}>
+                        <TouchableOpacity
+                        style={styles.button}>
+                            <Text style={styles.buttontxt}>Sign Up</Text>
+                        </TouchableOpacity>
             </View>
             <View style={{flexDirection:'row', top:20,justifyContent:'center', alignContent:'center',}}>
                 <Text style={styles.login}>If you didn’t receive the code?</Text>

@@ -88,13 +88,13 @@ const SignUp =()=>{
                     source={require('../../assets/eye.png')}
                     /> */}
                     </View>
-                    <View style={{width:wp('70%'), justifyContent:'center', alignSelf:'center',paddingTop:30,paddingBottom:20}}>
-                    <Button
-                    //onPress={onPressLearnMore}
-                    title="Sign Up"
-                    color="#A044FF"
-                    style={{fontSize:16, borderRadius:10,alignSelf:'center'}}
-                    />
+                    <View style={{width:wp('70%'), justifyContent:'center', alignSelf:'center',padding:hp('2%')}}>
+                    <View style={{alignSelf:'center',}}>
+                        <TouchableOpacity
+                        style={styles.button}>
+                            <Text style={styles.buttontxt}>Sign Up</Text>
+                        </TouchableOpacity>
+                    </View>
                     <View style={{flexDirection:'row', top:20,justifyContent:'center', alignContent:'center',}}>
                     <Text style={styles.login}>Already have an account? </Text>
                     <TouchableOpacity>
